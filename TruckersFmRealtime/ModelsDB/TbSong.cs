@@ -17,7 +17,5 @@ public partial class TbSong
 
     public string Link { get; set; } = null!;
 
-    public bool Import { get; set; }
-
     public virtual ICollection<TbSongsShow> TbSongsShows { get; set; } = new List<TbSongsShow>();
 }
