@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TruckersFmRealtimeScraper": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
