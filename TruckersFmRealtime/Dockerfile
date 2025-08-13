@@ -10,9 +10,9 @@ WORKDIR /app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["TruckersFmRealtime/TruckersFmRealtime.csproj", "TruckersFmRealtime/"]
+COPY ["./TruckersFmRealtime.csproj", "TruckersFmRealtime/"]
 RUN dotnet restore "./TruckersFmRealtime/TruckersFmRealtime.csproj"
-COPY . .
+COPY . ./TruckersFmRealtime/
 WORKDIR "/src/TruckersFmRealtime"
 RUN dotnet build "./TruckersFmRealtime.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
