@@ -21,7 +21,6 @@ CREATE TABLE `TbSongs` (
   `PlayCount` int(11) NOT NULL,
   `ChartPlacings` int(11) DEFAULT NULL,
   `Link` varchar(300) NOT NULL,
-  `Import` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
 
 CREATE TABLE `TbSongsShows` (
